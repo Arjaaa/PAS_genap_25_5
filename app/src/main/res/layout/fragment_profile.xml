@@ -26,7 +26,7 @@
                 android:padding="24dp">
 
                 <ImageView
-                    android:id="@+id/photoPerson1"
+                    android:id="@+id/fotozanadin"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:src="@drawable/profilzen"
@@ -34,7 +34,7 @@
                     android:padding="4dp" />
 
                 <TextView
-                    android:id="@+id/namePerson1"
+                    android:id="@+id/zanadin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Muhammad Zanadin Akbar"
@@ -42,13 +42,34 @@
                     android:textSize="20sp"
                     android:layout_marginTop="12dp" />
 
+
                 <TextView
-                    android:id="@+id/jobPerson1"
+                    android:id="@+id/kelaszanadin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas 10 PPLG 1"
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_marginTop="4dp"/>
+
+
+                <TextView
+                    android:id="@+id/absenzanadin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absen 25"
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/joborang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Collaborator"
                     android:textSize="16sp"
-                    android:textColor="#666" />
+                    android:textColor="#666"
+                    android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -66,7 +87,7 @@
                 android:padding="24dp">
 
                 <ImageView
-                    android:id="@+id/photoPerson2"
+                    android:id="@+id/fotoarza"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:src="@drawable/profilarja"
@@ -74,7 +95,7 @@
                     android:padding="4dp" />
 
                 <TextView
-                    android:id="@+id/namePerson2"
+                    android:id="@+id/arza"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Arza Armandhito"
@@ -82,13 +103,34 @@
                     android:textSize="20sp"
                     android:layout_marginTop="12dp" />
 
+
                 <TextView
-                    android:id="@+id/jobPerson2"
+                    android:id="@+id/kelasarza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas 10 PPLG 1"
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_marginTop="4dp"/>
+
+
+                <TextView
+                    android:id="@+id/absenarza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absen 5"
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/joborang2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Project Leader"
                     android:textSize="16sp"
-                    android:textColor="#666" />
+                    android:textColor="#666"
+                    android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

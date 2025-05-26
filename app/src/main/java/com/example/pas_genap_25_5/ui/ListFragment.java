@@ -25,7 +25,7 @@ public class ListFragment extends Fragment{
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
 
-        rvTeam = view.findViewById(R.id.rvTeam); // Tambahkan ini!
+        rvTeam = view.findViewById(R.id.rvTeam);
         rvTeam.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new LigaSpanyolAdapter(teams);
         rvTeam.setAdapter(adapter);

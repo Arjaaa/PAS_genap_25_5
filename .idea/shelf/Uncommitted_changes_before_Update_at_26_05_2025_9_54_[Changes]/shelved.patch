@@ -1,0 +1,149 @@
+Index: app/src/main/java/com/example/pas_genap_25_5/ui/ProfileFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.pas_genap_25_5.ui;\r\nimport androidx.fragment.app.Fragment;\r\n\r\npublic class ProfileFragment extends  Fragment {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/pas_genap_25_5/ui/ProfileFragment.java b/app/src/main/java/com/example/pas_genap_25_5/ui/ProfileFragment.java
+--- a/app/src/main/java/com/example/pas_genap_25_5/ui/ProfileFragment.java	(revision 3e9c28d8cfe234be09b2e0dd524485a63ff82214)
++++ b/app/src/main/java/com/example/pas_genap_25_5/ui/ProfileFragment.java	(date 1748226836435)
+@@ -1,5 +1,18 @@
+ package com.example.pas_genap_25_5.ui;
++import android.os.Bundle;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
+ import androidx.fragment.app.Fragment;
+ 
+-public class ProfileFragment extends  Fragment {
+-}
++import com.example.pas_genap_25_5.R;
++
++
++public class ProfileFragment extends Fragment {
++    public View onCreateView(LayoutInflater inflater, ViewGroup container,
++                             Bundle savedInstanceState) {
++        View view = inflater.inflate(R.layout.fragment_profile, container, false);
++        return view;
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_profile.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:card_view=\"http://schemas.android.com/apk/res-auto\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:padding=\"16dp\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        android:gravity=\"center_horizontal\">\r\n\r\n        <androidx.cardview.widget.CardView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            card_view:cardCornerRadius=\"16dp\"\r\n            card_view:cardElevation=\"8dp\"\r\n            android:layout_marginBottom=\"16dp\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:orientation=\"vertical\"\r\n                android:gravity=\"center_horizontal\"\r\n                android:padding=\"24dp\">\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/photoPerson1\"\r\n                    android:layout_width=\"120dp\"\r\n                    android:layout_height=\"120dp\"\r\n                    android:src=\"@drawable/profilzen\"\r\n                    android:scaleType=\"centerCrop\"\r\n                    android:padding=\"4dp\" />\r\n\r\n                <TextView\r\n                    android:id=\"@+id/namePerson1\"\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Muhammad Zanadin Akbar\"\r\n                    android:textStyle=\"bold\"\r\n                    android:textSize=\"20sp\"\r\n                    android:layout_marginTop=\"12dp\" />\r\n\r\n                <TextView\r\n                    android:id=\"@+id/jobPerson1\"\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Collaborator\"\r\n                    android:textSize=\"16sp\"\r\n                    android:textColor=\"#666\" />\r\n            </LinearLayout>\r\n        </androidx.cardview.widget.CardView>\r\n\r\n        <androidx.cardview.widget.CardView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            card_view:cardCornerRadius=\"16dp\"\r\n            card_view:cardElevation=\"8dp\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:orientation=\"vertical\"\r\n                android:gravity=\"center_horizontal\"\r\n                android:padding=\"24dp\">\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/photoPerson2\"\r\n                    android:layout_width=\"120dp\"\r\n                    android:layout_height=\"120dp\"\r\n                    android:src=\"@drawable/profilarja\"\r\n                    android:scaleType=\"centerCrop\"\r\n                    android:padding=\"4dp\" />\r\n\r\n                <TextView\r\n                    android:id=\"@+id/namePerson2\"\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Arza Armandhito\"\r\n                    android:textStyle=\"bold\"\r\n                    android:textSize=\"20sp\"\r\n                    android:layout_marginTop=\"12dp\" />\r\n\r\n                <TextView\r\n                    android:id=\"@+id/jobPerson2\"\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Project Leader\"\r\n                    android:textSize=\"16sp\"\r\n                    android:textColor=\"#666\" />\r\n            </LinearLayout>\r\n        </androidx.cardview.widget.CardView>\r\n\r\n    </LinearLayout>\r\n</ScrollView>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_profile.xml b/app/src/main/res/layout/fragment_profile.xml
+--- a/app/src/main/res/layout/fragment_profile.xml	(revision 3e9c28d8cfe234be09b2e0dd524485a63ff82214)
++++ b/app/src/main/res/layout/fragment_profile.xml	(date 1748227287739)
+@@ -26,7 +26,7 @@
+                 android:padding="24dp">
+ 
+                 <ImageView
+-                    android:id="@+id/photoPerson1"
++                    android:id="@+id/fotozanadin"
+                     android:layout_width="120dp"
+                     android:layout_height="120dp"
+                     android:src="@drawable/profilzen"
+@@ -34,7 +34,7 @@
+                     android:padding="4dp" />
+ 
+                 <TextView
+-                    android:id="@+id/namePerson1"
++                    android:id="@+id/zanadin"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Muhammad Zanadin Akbar"
+@@ -43,7 +43,7 @@
+                     android:layout_marginTop="12dp" />
+ 
+                 <TextView
+-                    android:id="@+id/jobPerson1"
++                    android:id="@+id/joborang"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Collaborator"
+@@ -66,7 +66,7 @@
+                 android:padding="24dp">
+ 
+                 <ImageView
+-                    android:id="@+id/photoPerson2"
++                    android:id="@+id/fotoarza"
+                     android:layout_width="120dp"
+                     android:layout_height="120dp"
+                     android:src="@drawable/profilarja"
+@@ -74,7 +74,7 @@
+                     android:padding="4dp" />
+ 
+                 <TextView
+-                    android:id="@+id/namePerson2"
++                    android:id="@+id/arza"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Arza Armandhito"
+@@ -83,7 +83,7 @@
+                     android:layout_marginTop="12dp" />
+ 
+                 <TextView
+-                    android:id="@+id/jobPerson2"
++                    android:id="@+id/joborang2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Project Leader"
+Index: app/src/main/java/model/searchResponses.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/model/searchResponses.java b/app/src/main/java/model/searchResponses.java
+new file mode 100644
+--- /dev/null	(date 1748228034215)
++++ b/app/src/main/java/model/searchResponses.java	(date 1748228034215)
+@@ -0,0 +1,7 @@
++package model;
++import java.util.List;
++public class searchResponses {
++    private List<search> searches;
++
++    public List<search> getSearches() { return searches; }
++}
+Index: app/src/main/java/model/search.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/model/search.java b/app/src/main/java/model/search.java
+new file mode 100644
+--- /dev/null	(date 1748227906513)
++++ b/app/src/main/java/model/search.java	(date 1748227906513)
+@@ -0,0 +1,26 @@
++package model;
++
++import com.google.gson.annotations.SerializedName;
++
++public class search {
++    @SerializedName("name")
++    private String name;
++
++    @SerializedName("team")
++    private int team;
++
++    @SerializedName("sports")
++    private int sports;
++
++    @SerializedName("nationality")
++    private String nationality;
++
++    @SerializedName("dateborn")
++    private String dateborn;
++
++    public String getName() { return name; }
++    public int getTeam() { return team; }
++    public int getSports() { return sports; }
++    public String getNationality() { return nationality; }
++    public String getDateborn() { return dateborn; }
++}
