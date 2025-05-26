@@ -6,9 +6,9 @@ import java.util.List;
 
 public class LigaResponses {
     @SerializedName("teams")
-    private List<com.example.pas_genap_25_5.model.Liga> teams;
+    private List<com.example.pas_genap_25_5.model.Liga> ligas;
 
-    public List<com.example.pas_genap_25_5.model.Liga> getTeams() {
-        return liga;
+    public List<com.example.pas_genap_25_5.model.Liga> getLigas() {
+        return ligas;
     }
 }

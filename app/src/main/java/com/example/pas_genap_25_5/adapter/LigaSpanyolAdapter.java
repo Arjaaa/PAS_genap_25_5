@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.pas_genap_25_5.R;
 import com.example.pas_genap_25_5.model.Liga;
 
@@ -31,18 +32,26 @@ public class LigaSpanyolAdapter extends RecyclerView.Adapter<LigaSpanyolAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        Liga ligas = teamList.get(position);
+        holder.teamName.setText(ligas.getStrTeam());
+        holder.teamDescription.setText(ligas.getStrDescriptionEN());
+        Glide.with(holder.itemView.getContext())
+                .load(ligas.getStrTeamBadge())
+                .into(holder.teamBadge);
     }
 
+    @Override
+    public int getItemCount() {
+        return teamList.size();
+    }
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView teamName, teamDescription, teamKeywords;
+        TextView teamName, teamDescription;
         ImageView teamBadge;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             teamName = itemView.findViewById(R.id.tv_team_name);
             teamDescription = itemView.findViewById(R.id.tv_description);
-            teamKeywords = itemView.findViewById(R.id.tv_keywords);
             teamBadge = itemView.findViewById(R.id.img_team_badge);
         }
     }

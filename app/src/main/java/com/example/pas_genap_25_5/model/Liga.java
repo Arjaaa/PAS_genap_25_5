@@ -14,6 +14,11 @@ public class Liga {
 
     @SerializedName("strBadge")
     private String strBadge;
+    public Liga(String strTeam, String strDescriptionEN, String strTeamBadge) {
+        this.strTeam = strTeam;
+        this.strDescriptionEN = strDescriptionEN;
+        this.strBadge = strTeamBadge;
+    }
 
     // Getters
     public String getIdTeam() { return idTeam; }
