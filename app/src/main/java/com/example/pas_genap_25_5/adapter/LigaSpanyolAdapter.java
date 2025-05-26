@@ -16,7 +16,7 @@ import com.example.pas_genap_25_5.model.Liga;
 import java.util.List;
 
 public class LigaSpanyolAdapter extends RecyclerView.Adapter<LigaSpanyolAdapter.ViewHolder> {
-    private final List<Liga> teamList;
+    private List<Liga> teamList;
 
     public LigaSpanyolAdapter(List<Liga> teamList) {
         this.teamList = teamList;
